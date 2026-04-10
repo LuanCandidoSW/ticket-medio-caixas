@@ -1,0 +1,113 @@
+Algoritmo "TicketMedioCaixas"
+
+Var
+   valorCompra, soma, ticketMedio, maiorTicket : Real
+   qtdClientes, caixa, melhorCaixa, opcao : Inteiro
+
+Inicio
+   caixa <- 1
+   maiorTicket <- 0
+   melhorCaixa <- 0
+
+   Enquanto (verdadeiro) faca
+      Escreva("Deseja informar dados do caixa ", caixa, "? (1-Sim / 0-Nao): ")
+      Leia(opcao)
+
+      Se (opcao = 0) entao
+         Pare
+      FimSe
+
+      soma <- 0
+      qtdClientes <- 0
+
+      Enquanto (verdadeiro) faca
+         Escreva("Digite o valor da compra (ou -1 para encerrar): ")
+         Leia(valorCompra)
+
+         Se (valorCompra = -1) entao
+            Pare
+         FimSe
+
+         soma <- soma + valorCompra
+         qtdClientes <- qtdClientes + 1
+      FimEnquanto
+
+      Se (qtdClientes > 0) entao
+         ticketMedio <- soma / qtdClientes
+      Senao
+         ticketMedio <- 0
+      FimSe
+
+      Escreva("Caixa ", caixa)
+      Escreva("Clientes atendidos: ", qtdClientes)
+      Escreva("Ticket medio: ", ticketMedio:0:2)
+
+      Se (ticketMedio > maiorTicket) entao
+         maiorTicket <- ticketMedio
+         melhorCaixa <- caixa
+      FimSe
+
+      caixa <- caixa + 1
+   FimEnquanto
+
+   Escreva("--------------------------------")
+   Escreva("Melhor caixa: ", melhorCaixa)
+   Escreva("Maior ticket medio: ", maiorTicket:0:2)
+
+FimalgoritmoAlgoritmo "TicketMedioCaixas"
+
+Var
+   valorCompra, soma, ticketMedio, maiorTicket : Real
+   qtdClientes, caixa, melhorCaixa, opcao : Inteiro
+
+Inicio
+   caixa <- 1
+   maiorTicket <- 0
+   melhorCaixa <- 0
+
+   Enquanto (verdadeiro) faca
+      Escreva("Deseja informar dados do caixa ", caixa, "? (1-Sim / 0-Nao): ")
+      Leia(opcao)
+
+      Se (opcao = 0) entao
+         Pare
+      FimSe
+
+      soma <- 0
+      qtdClientes <- 0
+
+      Enquanto (verdadeiro) faca
+         Escreva("Digite o valor da compra (ou -1 para encerrar): ")
+         Leia(valorCompra)
+
+         Se (valorCompra = -1) entao
+            Pare
+         FimSe
+
+         soma <- soma + valorCompra
+         qtdClientes <- qtdClientes + 1
+      FimEnquanto
+
+      Se (qtdClientes > 0) entao
+         ticketMedio <- soma / qtdClientes
+      Senao
+         ticketMedio <- 0
+      FimSe
+
+      Escreva("Caixa ", caixa)
+      Escreva("Clientes atendidos: ", qtdClientes)
+      Escreva("Ticket medio: ", ticketMedio:0:2)
+
+      Se (ticketMedio > maiorTicket) entao
+         maiorTicket <- ticketMedio
+         melhorCaixa <- caixa
+      FimSe
+
+      caixa <- caixa + 1
+   FimEnquanto
+
+   Escreva("--------------------------------")
+   Escreva("Melhor caixa: ", melhorCaixa)
+   Escreva("Maior ticket medio: ", maiorTicket:0:2)
+
+Fimalgoritmo
