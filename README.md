@@ -14,4 +14,4 @@ O algoritmo utiliza estruturas de repetição para:
 - Acumuladores (soma)
 
 ## 📊 Complexidade
-- Tempo: O(n), onde n é o total de clientes
+- Tempo: O(n), onde não é o total de clientes
