@@ -1,0 +1,1 @@
+# ticket-medio-caixas
